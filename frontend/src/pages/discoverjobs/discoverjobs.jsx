@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import "./discoverjobs.css";
-import JobCard from "../../components/JobCard/JobCard";
+import JobCard from "../../components/jobCard/jobCard";
 import API from "../../services/api";
 
 function DiscoverJobs() {
