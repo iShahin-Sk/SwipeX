@@ -1,4 +1,4 @@
-import "./jobCard.css";
+import "./jobcard.css";
 
 function JobCard({
   job,
