@@ -13,7 +13,7 @@ import {
 } from "recharts";
 
 import API from "../../services/api";
-import "./hiringtrends.css";
+import "./HiringTrends.css";
 
 function HiringTrends() {
   const [trends, setTrends] = useState(null);
