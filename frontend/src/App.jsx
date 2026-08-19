@@ -4,7 +4,7 @@ import Landing from "./pages/landing/landing.jsx";
 import Login from "./pages/login/login.jsx";
 import Register from "./pages/register/register.jsx";
 
-import layout from "./components/layout/layout.jsx";
+import Layout from "./components/layout/layout.jsx";
 
 // ======================
 // Job Seeker Pages
