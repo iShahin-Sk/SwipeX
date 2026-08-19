@@ -14,7 +14,7 @@ import JobSeekerDashboard from "./pages/jobseekerdashboard/dashboard.jsx";
 import DiscoverJobs from "./pages/discoverjobs/discoverjobs.jsx";
 import RecommendedJobs from "./pages/recommendedjobs/recommendedjobs.jsx";
 import SuitableJobs from "./pages/suitablejobs/suitablejobs.jsx";
-import HiringTrends from "./pages/hiringtrends/Hiringtrends.jsx";
+import HiringTrends from "./pages/hiringtrends/HiringTrends.jsx";
 import Companies from "./pages/companies/companies.jsx";
 import SavedJobs from "./pages/savedjobs/savedjobs.jsx";
 import MyApplications from "./pages/myapplications/myapplications.jsx";
@@ -31,7 +31,7 @@ import RecruiterEditJob from "./pages/recruitereditjob/editjob.jsx";
 import RecruiterApplicants from "./pages/recruiterapplicants/applicants.jsx";
 import RecruiterAnalytics from "./pages/recruiteranalytics/analytics.jsx";
 
-import "./app.css"; // ✅ CSS import corrected
+import "./App.css"; // ✅ CSS import corrected
 
 function App() {
   return (
