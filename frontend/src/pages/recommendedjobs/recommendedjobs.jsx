@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./recommendedjobs.css";
-import JobCard from "../../components/jobCard/jobCard";
+import JobCard from "../../components/jobcard/jobcard";
 import API from "../../services/api";
 
 function RecommendedJobs() {
