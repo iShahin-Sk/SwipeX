@@ -1,0 +1,79 @@
+.recommended-page {
+  padding: 30px;
+}
+
+.recommended-header {
+  margin-bottom: 30px;
+}
+
+.recommended-header h1 {
+  margin-bottom: 8px;
+}
+
+.recommended-header p {
+  color: #666;
+}
+
+.recommended-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recommended-item {
+  position: relative;
+  padding: 25px;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.match-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: #e8f7ee;
+  color: #16834b;
+  font-weight: bold;
+}
+
+.recommendation-info {
+  margin-bottom: 15px;
+  color: #777;
+  font-size: 14px;
+}
+
+.recommended-job-info h2 {
+  margin-bottom: 10px;
+}
+
+.recommended-job-info p {
+  margin: 7px 0;
+}
+
+.recommended-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.recommended-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.recommended-loading {
+  padding: 40px;
+  text-align: center;
+}
+
+.no-recommendations {
+  padding: 40px;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+}

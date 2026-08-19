@@ -1,0 +1,373 @@
+.analytics-page {
+  padding: 35px;
+  background: #f5f7fb;
+  min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.analytics-header {
+  margin-bottom: 30px;
+}
+
+.analytics-header h1 {
+  font-size: 30px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.analytics-header p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+
+/* =========================
+   SUMMARY CARDS
+========================= */
+
+.analytics-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  );
+
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.analytics-card {
+  background: white;
+  padding: 22px;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+  transition: transform 0.2s ease;
+}
+
+.analytics-card:hover {
+  transform: translateY(-3px);
+}
+
+.analytics-card h3 {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 7px;
+}
+
+.analytics-card strong {
+  font-size: 27px;
+  color: #111827;
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+  background: #eff6ff;
+
+  font-size: 22px;
+}
+
+
+/* =========================
+   MAIN GRID
+========================= */
+
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+
+/* =========================
+   ANALYTICS SECTIONS
+========================= */
+
+.analytics-section {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 19px;
+  color: #1f2937;
+}
+
+.section-header span {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.status-row {
+  display: grid;
+
+  grid-template-columns:
+    110px
+    1fr
+    45px;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.status-info {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.status-info strong {
+  color: #111827;
+}
+
+.progress-background {
+  height: 9px;
+
+  background: #eef2f7;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+
+  border-radius: 10px;
+
+  transition: width 0.5s ease;
+}
+
+
+/* Progress bar types */
+
+.applied-progress {
+  background: #3b82f6;
+}
+
+.shortlisted-progress {
+  background: #f59e0b;
+}
+
+.interview-progress {
+  background: #8b5cf6;
+}
+
+.selected-progress {
+  background: #10b981;
+}
+
+.rejected-progress {
+  background: #ef4444;
+}
+
+.percentage {
+  font-size: 12px;
+  color: #6b7280;
+  text-align: right;
+}
+
+
+/* =========================
+   TREND CHART
+========================= */
+
+.trend-chart {
+  height: 260px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-around;
+
+  gap: 20px;
+
+  padding:
+    20px
+    10px
+    0;
+}
+
+.trend-item {
+  height: 100%;
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: flex-end;
+
+  align-items: center;
+}
+
+.trend-value {
+  font-size: 13px;
+
+  font-weight: bold;
+
+  color: #2563eb;
+
+  margin-bottom: 7px;
+}
+
+.trend-bar-container {
+  height: 180px;
+
+  width: 45px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  background: #f3f4f6;
+
+  border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.trend-bar {
+  width: 100%;
+
+  background: #2563eb;
+
+  border-radius:
+    8px
+    8px
+    0
+    0;
+
+  min-height: 4px;
+
+  transition:
+    height 0.5s ease;
+}
+
+.trend-month {
+  font-size: 12px;
+
+  color: #6b7280;
+
+  margin-top: 10px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   NO DATA
+========================= */
+
+.no-trends {
+  height: 260px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #9ca3af;
+
+  font-size: 14px;
+}
+
+
+/* =========================
+   LOADING / ERROR
+========================= */
+
+.analytics-loading {
+  color: #6b7280;
+  padding-top: 20px;
+}
+
+.analytics-error {
+  color: #dc2626;
+  background: #fee2e2;
+
+  padding: 15px;
+
+  border-radius: 8px;
+
+  margin-top: 20px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .analytics-page {
+    padding: 20px;
+  }
+
+  .analytics-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .status-row {
+    grid-template-columns:
+      90px
+      1fr
+      35px;
+  }
+
+}

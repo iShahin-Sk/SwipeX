@@ -1,0 +1,341 @@
+.suitable-jobs-page {
+  min-height: 100vh;
+  padding: 30px;
+  background: var(--bg, #f5f7fb);
+  color: var(--text, #111827);
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.suitable-header {
+  margin-bottom: 30px;
+}
+
+.suitable-header h1 {
+  margin: 20px 0 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.suitable-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+
+/* =====================================
+   BACK BUTTON
+===================================== */
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+
+/* =====================================
+   COUNT
+===================================== */
+
+.suitable-count {
+  margin-bottom: 20px;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* =====================================
+   JOB GRID
+===================================== */
+
+.suitable-jobs-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    );
+
+  gap: 20px;
+}
+
+
+/* =====================================
+   JOB CARD
+===================================== */
+
+.suitable-job-card {
+  padding: 22px;
+
+  background:
+    var(--surface, #ffffff);
+
+  border:
+    1px solid
+    var(--border, #e5e7eb);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 14px
+    rgba(15, 23, 42, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.suitable-job-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(15, 23, 42, 0.08);
+}
+
+
+/* =====================================
+   TITLE
+===================================== */
+
+.suitable-job-card h2 {
+  margin: 0 0 8px;
+
+  font-size: 20px;
+
+  color:
+    var(--text, #111827);
+}
+
+
+/* =====================================
+   COMPANY
+===================================== */
+
+.suitable-company {
+  margin: 0 0 15px;
+
+  color: #2563eb;
+
+  font-weight: 600;
+}
+
+
+/* =====================================
+   JOB DETAILS
+===================================== */
+
+.suitable-job-details {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 15px;
+}
+
+.suitable-job-details span {
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  background: #eff6ff;
+
+  color: #2563eb;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================
+   DESCRIPTION
+===================================== */
+
+.suitable-description {
+  margin-bottom: 15px;
+
+  color: #6b7280;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+
+/* =====================================
+   SKILLS
+===================================== */
+
+.suitable-skills {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 6px;
+}
+
+.suitable-skills span {
+  padding: 6px 9px;
+
+  border-radius: 15px;
+
+  background: #dcfce7;
+
+  color: #15803d;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =====================================
+   LOADING
+===================================== */
+
+.suitable-loading {
+  min-height: 300px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #6b7280;
+
+  font-size: 16px;
+}
+
+
+/* =====================================
+   ERROR
+===================================== */
+
+.suitable-error {
+  padding: 30px;
+
+  text-align: center;
+
+  color: #dc2626;
+
+  background: #fee2e2;
+
+  border-radius: 12px;
+}
+
+
+/* =====================================
+   EMPTY
+===================================== */
+
+.suitable-empty {
+  max-width: 500px;
+
+  margin: 60px auto;
+
+  padding: 40px;
+
+  text-align: center;
+
+  background:
+    var(--surface, #ffffff);
+
+  border:
+    1px solid
+    var(--border, #e5e7eb);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 4px 14px
+    rgba(15, 23, 42, 0.05);
+}
+
+.suitable-empty-icon {
+  font-size: 45px;
+
+  margin-bottom: 15px;
+}
+
+.suitable-empty h2 {
+  margin: 0 0 10px;
+}
+
+.suitable-empty p {
+  margin-bottom: 20px;
+
+  color: #6b7280;
+
+  line-height: 1.6;
+}
+
+.suitable-empty button {
+  padding: 10px 18px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =====================================
+   DARK MODE
+===================================== */
+
+body.dark-theme .suitable-job-card,
+body.dark-theme .suitable-empty {
+  background: var(--surface);
+}
+
+body.dark-theme .suitable-header p,
+body.dark-theme .suitable-count,
+body.dark-theme .suitable-description {
+  color: #9ca3af;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 600px) {
+
+  .suitable-jobs-page {
+    padding: 20px;
+  }
+
+  .suitable-header h1 {
+    font-size: 27px;
+  }
+
+  .suitable-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+
+}

@@ -1,0 +1,83 @@
+.myjobs-container {
+    padding: 35px;
+}
+
+.myjobs-container h1 {
+    margin-bottom: 30px;
+    color: #1f2937;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 25px;
+}
+
+.job-card {
+    background: white;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: .25s;
+    border-left: 5px solid #4f46e5;
+}
+
+.job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.15);
+}
+
+.job-card h2 {
+    margin-bottom: 18px;
+    color: #4f46e5;
+}
+
+.job-card p {
+    margin: 10px 0;
+    color: #444;
+    line-height: 1.5;
+}
+
+.job-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit-btn,
+.delete-btn {
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .25s;
+}
+
+.edit-btn {
+    background: #2563eb;
+}
+
+.edit-btn:hover {
+    background: #1d4ed8;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.delete-btn:hover {
+    background: #b91c1c;
+}
+
+@media(max-width:768px){
+
+.jobs-grid{
+    grid-template-columns:1fr;
+}
+
+}
