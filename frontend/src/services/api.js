@@ -1,7 +1,8 @@
 import axios from "axios";
 
+// Use environment variable for backend API URL
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
 // Attach JWT only to protected endpoints
@@ -10,10 +11,7 @@ API.interceptors.request.use((config) => {
 
   // Skip JWT for public endpoints
   const publicRoutes = ["login/", "register/"];
-
-  const isPublic = publicRoutes.some((route) =>
-    config.url?.includes(route)
-  );
+  const isPublic = publicRoutes.some((route) => config.url?.includes(route));
 
   if (token && !isPublic) {
     config.headers.Authorization = `Bearer ${token}`;
